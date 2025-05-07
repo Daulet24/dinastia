@@ -1,0 +1,35 @@
+.slider-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; /* Убираем отступы */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slider-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.slider-image {
+  width: 100%; /* Картинка занимает всю ширину контейнера */
+  height: 100%; /* Высота изображения будет пропорциональна */
+  object-fit: cover; /* Объект будет адаптироваться к размеру контейнера, сохраняя пропорции */
+}
+
+/* Для мобилок */
+@media (max-width: 640px) {
+  .slider-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Для планшетов и десктопов */
+@media (min-width: 768px) {
+  .slider-title {
+    font-size: 1.8rem;
+  }
+}
